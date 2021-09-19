@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  /*border:*/
+}
+
+main {
+  border: 4px solid green;
+  margin: 4px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.article {
+  border-radius: 10px;
+}
+
+header {
+  text-align: center;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+a {
+  display: flex;
+  align-items: center;
+}
+
+button {
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

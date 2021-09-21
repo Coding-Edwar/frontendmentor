@@ -1,24 +1,50 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Red Hat Display", sans-serif;
   /*border:*/
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(images/pattern-background-desktop.svg);
 }
 
 main {
-  margin: 4px;
-  padding: 10px;
+  margin-top: 6%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 20px;
+  box-shadow: 1px 20px 20px hsl(224, 23%, 55%);
+  border: inherit;
+}
+
+main:hover {
+}
+
+.hero {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .article {
-  border-radius: 10px;
+  margin: 4px;
+  padding: 4px;
+}
+
+.article:hover {
 }
 
 header {
@@ -26,7 +52,7 @@ header {
 }
 
 .summary {
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 10px;
 }
 
@@ -38,7 +64,7 @@ p #caption {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 16px;
+  margin: 22px;
   padding: 22px;
   background-color: lightgray;
   border-radius: 10px;
@@ -49,7 +75,9 @@ div {
 }
 
 .music {
-  margin-right: 8px;
+  margin-left: 4px;
+  margin-right: 10px;
+  margin-top: 4px;
 }
 
 span {
@@ -73,32 +101,46 @@ a {
 }
 
 .buttons {
+  margin: 6px;
+  padding: 4px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  outline: none;
-  color: hsl(245, 75%, 52%);
-}
-
-.button:hover {
+  align-items: center;
+  justify-content: space-around;
   color: hsl(245, 75%, 52%);
 }
 
 .a #proceed {
-  margin: 4px;
-  padding: 8px;
+  margin: 8px;
+  padding: 4px;
   cursor: pointer;
 }
 
 .a #cancel {
-  margin: 4px;
-  padding: 8px;
+  margin: 8px;
+  padding: 4px;
   cursor: pointer;
+}
+
+#proceed:hover {
+  border: 4px solid hsl(245, 75%, 52%);
+}
+
+#cancel:hover {
+  border: 4px solid hsl(245, 75%, 52%);
 }
 
 footer {
   display: flex;
   justify-content: center;
+  align-content: center;
+  text-align: center;
+  position: fixed;
+  height: 50px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin-bottom: 0px;
 }
 .attribution {
   font-size: 11px;

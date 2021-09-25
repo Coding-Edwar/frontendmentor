@@ -82,6 +82,8 @@ Users should be able to:
 
 - [CSS Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors) - This is an another reference which helped me.
 
+- [W3C HTML validation](https://validator.w3.org/#validate_by_input)
+
 ## Author
 
 - Frontend Mentor - [@Coding-Edwar](https://www.frontendmentor.io/profile/Coding-Edwar)

@@ -49,7 +49,7 @@ Users should be able to:
         <img src="" />
         <h3>Annual Plan</h3>
         <p>$price$</p>
-        <a href="”#”">Change</a>
+        <a href="#">Change</a>
       </section>
       <button>Proceed to Payment</button>
       <button>Cancel Order</button>

@@ -1,57 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
-  </style>
-  
-  <title>Frontend Mentor | Order summary card</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+    </style>
 
+    <title>Frontend Mentor | Order summary card</title>
+  </head>
+  <body>
+    <article
+      class="card-component"
+      aria-label="ordersummarycard"
+      role="article"
+    >
+      <h1 class="hidden">card component of order summary</h1>
+      <img
+        class="hero"
+        aria-label="hero-image"
+        role="img"
+        src="./images/illustration-hero.svg"
+        alt="Person with headphones dancing to music"
+      />
 
-</head>
-<body>
-  
-  <main>
+      <section class="article" aria-label="hearder" role="heading">
+        <header>
+          <h2 class="summary">Order Summary</h2>
+          <p class="caption" aria-label="summary-caption" role="text">
+            You can now listen to millions of songs, audiobooks, and podcasts on
+            any device anywhere you like!
+          </p>
+        </header>
 
-  <img class="hero" src="./images/illustration-hero.svg" alt="Person dancing to music graphic">
+        <section class="container" aria-label="summary-list" role="">
+          <h3 class="hidden">purchase conatianer</h3>
+          <div
+            class="purchase"
+            aria-label="purchase-container"
+            role="contentinfo"
+          >
+            <img
+              class="music"
+              src="./images/icon-music.svg"
+              alt="Music Icon"
+              width="50"
+              height="50"
+              aria-label="music-icon"
+              role="img"
+            />
+            <ol class="items" aria-label="purchase-item" role="list">
+              <li id="plan">Annual Plan</li>
+              <li id="price">$59.99/year</li>
+            </ol>
+          </div>
+          <a class="goback" href="#" aria-label="return-page" role="link"
+            >Change</a
+          >
+        </section>
 
-    <aritcle class="article">
-      <header>
-        <h2 class="summary">Order Summary</h2>
-        <p class="caption">
-          You can now listen to millions of songs, audiobooks, and podcasts on any
-          device anywhere you like!
-        </p>
-      </header>
-
-      <section class="container">
-        <div class="purchase">
-          <img class="music" src="./images/icon-music.svg" alt="Music Icon" width="50" height="50">
-            <span>
-              <p id="item">Annual Plan</p>
-              <p id="price">$59.99/year</p>
-            </span>
-        </div>
-        <a class="goback" href="#">Change</a>
+        <section class="buttons">
+          <h3 class="hidden">buttons section</h3>
+          <button id="proceed">Proceed to Payment</button>
+          <button id="cancel">Cancel Order</button>
+        </section>
       </section>
-      
-      <section class="buttons">
-        <a id="proceed" href="#">Proceed to Payment</a>
-        <a id="cancel" href="#">Cancel Order</a>
-      </section>
-    </aritcle>
+    </article>
 
-  </main>
-  
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
-      Coded by <a href="https://github.com/Coding-Edwar/frontendmentor/tree/main/challenges/order-summary-component-main">Edward Cedano</a>
-    </div>
-  </footer>
-</body>
+    <footer>
+      <div class="attribution">
+        Challenge by&nbsp;<a
+          href="https://www.frontendmentor.io/solutions/flexbox-8tipvr3Zx"
+          target="/solutions/flexbox-8tipvr3Zx"
+          >Frontend Mentor&nbsp;</a
+        >Coded by&nbsp;<a
+          href="https://github.com/Coding-Edwar/frontendmentor/tree/main/challenges/order-summary-component-main"
+          >Edward Cedano</a
+        >
+      </div>
+    </footer>
+  </body>
 </html>

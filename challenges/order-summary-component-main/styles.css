@@ -7,7 +7,7 @@
 
 html,
 body {
-  height: 100%;
+  min-height: 100vh;
   background: url("images/pattern-background-desktop.svg");
   background-repeat: repeat-x;
   background-color: hsl(225, 100%, 94%);
@@ -19,8 +19,10 @@ body {
   align-items: center;
   justify-content: space-evenly;
 }
-
-main {
+.hidden {
+  display: none;
+}
+.card-component {
   height: 42em;
   width: 27em;
   margin-top: -2em;
@@ -29,14 +31,9 @@ main {
   justify-content: center;
   background-color: #ffff;
   border-radius: 1.3em;
+  overflow: hidden;
   box-shadow: 0px 10px 40px hsl(210, 24%, 65%);
   z-index: 1;
-}
-
-.hero {
-  height: 32%;
-  border-top-left-radius: 1.3em;
-  border-top-right-radius: 1.3em;
 }
 
 .article {
@@ -63,8 +60,6 @@ header {
 }
 
 .caption {
-  margin: 0.2em;
-  padding: 0.2em;
   font-weight: 500;
   font-size: 16px;
   color: hsl(224, 23%, 55%);
@@ -91,7 +86,11 @@ div {
   margin-right: 1em;
 }
 
-#item {
+ol {
+  list-style: none;
+}
+
+#plan {
   font-weight: 900;
   padding: 0.16em;
   color: hsl(223, 47%, 23%);
@@ -104,49 +103,55 @@ div {
   color: hsl(224, 23%, 55%);
 }
 
-.buttons {
+/*.buttons {
   height: 8.5em;
   width: 21em;
   margin-bottom: 10px;
-  margin-top: 0.6em;
+  margin-top: 0;
   padding: 0.2em;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  outline: 2px solid yellowgreen;
+}*/
+.buttons {
+  height: 8em;
+  width: 22em;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
 }
 
 #proceed {
-  height: 2em;
-  width: 98%;
-  margin: 0.4em;
-  padding: 0.6em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 2.6em;
+  margin-bottom: 1.2em;
   font-weight: 700;
   font-size: 16px;
+  box-shadow: 0px 3px 4px hsl(226, 34%, 68%);
   border-radius: 12px;
-  box-shadow: 0px 10px 20px hsl(226, 34%, 68%);
+  border: none;
   background-color: hsl(245, 75%, 52%);
-  color: white;
+  color: #ffff;
   cursor: pointer;
+  text-decoration: none;
 }
 
 #cancel {
-  height: 2em;
-  width: 98%;
-  margin: 0.4em;
-  padding: 0.6em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 2.6em;
   font-weight: 700;
   font-size: 16px;
-  color: hsl(224, 23%, 55%);
   border-radius: 12px;
   border: none;
+  color: hsl(224, 23%, 55%);
+  background-color: #ffffff;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .goback:hover {
@@ -156,16 +161,16 @@ div {
 
 #proceed:hover {
   color: #6deccc;
-  pointer-events: visible;
-  transform: scale(1.1);
+  box-shadow: 0px 10px 10px hsl(226, 34%, 68%);
+  transform: scale(1.05);
+  transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
 #cancel:hover {
   color: #ff4444;
-  pointer-events: visible;
-  transform: scale(1.05);
-  border: 0px solid hsl(226, 34%, 68%);
   box-shadow: 0px 10px 20px hsl(226, 34%, 68%);
+  transform: scale(1.05);
+  transition: background 250ms ease-in-out, transform 150ms ease;
 }
 
 footer {
@@ -186,18 +191,4 @@ footer {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-}
-
-@media screen and (min-width: 375px) {
-  body {
-    min-width: 375px;
-    min-height: 280;
-  }
-}
-
-@media screen and (max-width: 1440px) {
-  body {
-    max-width: 1440px;
-    min-height: 1020;
-  }
 }

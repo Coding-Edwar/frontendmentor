@@ -1,7 +1,7 @@
-# Frontend Mentor
+# Challenges
 
-This repo will be used to keep track of my practice on Frontend Mentor.
+Below is the list of the challenge I've completed.
 
-Check out the challenges I have work on.
+1. [order-summary-component-main](https://github.com/Coding-Edwar/frontendmentor/tree/main/challenges/order-summary-component-main)
 
-- [Challenges](https://github.com/Coding-Edwar/frontendmentor/tree/main/challenges)
+![Order Summary](order-summary-component-main/screenshots/challenge-complete.png)
